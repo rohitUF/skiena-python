@@ -11,9 +11,9 @@ def sort(arr):
 class TestSorting(unittest.TestCase):
         
     def testSorting(self):
-        arr = [4, 3, 5, 2]
+        arr = [4, 81, 3, 5, 2]
         sort(arr)
-        self.assertEqual(arr, [2, 3, 4, 5])
+        self.assertEqual(arr, [2, 3, 4, 5, 81])
         
 if __name__ == '__main__':
     suite = unittest.TestLoader().loadTestsFromTestCase(TestSorting)
